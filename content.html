@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eye Care Project</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-image: url("./images/backg_12.jpg");
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 2em;
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      nav {
+        background-color: #444;
+        padding: 1em 0;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 1em;
+        margin: 0 1em;
+        cursor: pointer;
+      }
+
+      section {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-top: 60px;
+      }
+
+      section h2 {
+        color: #333;
+      }
+
+      section p {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      section.team {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .team-members-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .team-member {
+        text-align: center;
+        width: 250px;
+        margin: 10px;
+      }
+
+      .team-member img {
+        width: 100%;
+        border-radius: 10%;
+        margin-bottom: 10px;
+      }
+
+      section.resources {
+        /* background-image: url("./images/resources-bg.jpg"); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10em;
+        height: 800px;
+      }
+
+      .pdf-folder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 10px;
+      }
+
+      .pdf-folder div {
+        width: 250px;
+        margin: 20px;
+        background-color: #fff;
+        padding: 1em;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .pdf-folder h3 {
+        color: #333;
+        cursor: pointer;
+      }
+
+      .pdf-folder:hover div {
+        transform: scale(1.05);
+      }
+
+      .pdf-link {
+        display: block;
+        margin: 1em 0;
+        text-align: center;
+        color: #333;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        background-color: #eee;
+        border-radius: 4px;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .pdf-link:hover {
+        background-color: #ddd;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .footer-content p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#project">Project</a>
+      <a href="#team">Team</a>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+
+    <header>
+      <h1>
+        MACHINE LEARNING APPROACH TO DETECT & ANNOTATE EYE DISEASES <br />
+        USING RETINAL IMAGES
+      </h1>
+
+      <p>
+        Advancing Healthcare through Eye Diseases Detection and Classification
+      </p>
+    </header>
+
+    <section id="project">
+      <h2>Project Details</h2>
+      <p>
+        <!-- Welcome to our innovative research project in the field of eye diseases
+        detection and classification. We focus on identifying and classifying
+        Diabetic Retinopathy (DR) and Age-Related Macular Degeneration (AMD).
+        Our goal is to contribute to early diagnosis and effective treatment. -->
+        Welcome to our groundbreaking research on Diabetic Retinopathy (DR) and
+        Age-Related Macular Degeneration (AMD). These two eye conditions are
+        significant contributors to visual impairment and blindness worldwide.
+        Our research focuses on developing advanced diagnostic tools using
+        cutting-edge image processing and machine learning techniques, with a
+        particular emphasis on their applicability in resource-limited regions
+        around the world.
+        <br /><br />
+        We are dedicated to creating a mobile application utilizing deep
+        learning models that can accurately detect and categorize the severity
+        of DR through the analysis of retinal fundus images. Our goal is to
+        facilitate early detection, enhance treatment effectiveness, and improve
+        the overall diagnostic process. With our mobile app, you can take
+        control of your eye health. Simply upload your retinal images, and let
+        our cutting-edge technology do the rest. Receive early detection and
+        detailed annotations, all in the palm of your hand. Our app is designed
+        to streamline the diagnostic process, making it faster, more accurate,
+        and more accessible.
+
+        <br /><br />
+
+        Join us in the mission to reduce the global burden of blindness and
+        visual impairment. With this mobile application, we're making a
+        significant impact on eye health, one retinal image at a time.
+      </p>
+    </section>
+
+    <section id="team" class="team">
+      <h2>Our Team</h2>
+      <div class="team-members-container">
+        <div class="team-member">
+          <img src="images/nilaksha.jpg" alt="IT20166106" />
+          <p><strong>Perera H. A. N. S </strong></p>
+          <p>IT20166106</p>
+        </div>
+        <div class="team-member">
+          <img src="images/praveen.jpg" alt="IT20172978" />
+          <p><strong>Kariyawasam K. G. P. C. </strong></p>
+          <p>IT20172978</p>
+        </div>
+        <div class="team-member">
+          <img src="images/chamod.jpg" alt="IT20227890" />
+          <p><strong>Muthukumarana M. W. A. N. C.</strong></p>
+          <p>IT20227890</p>
+        </div>
+        <div class="team-member">
+          <img src="images/rasanga.jpg" alt="IT20165666" />
+          <p><strong>Lakshith G. P. R.</strong></p>
+          <p>IT20165666</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="resources">
+      <h2>Research Resources</h2>
+      <div class="pdf-folder">
+        <div>
+          <h3>Group Submissions</h3>
+          <ul>
+            <li class="resource">
+              <a class="pdf-link" href="g_proposal.pdf" download
+                >Proposal Presentation</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="g_pp1.pdf" download
+                >Progress Presentation 1</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="g_research.pdf" download
+                >Research Paper</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="g_pp2.pdf" download
+                >Progress Presentation 2</a
+              >
+            </li>
+
+            <li class="resource">
+              <a class="pdf-link" href="g_fp.pdf" download
+                >Final Presentation</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>IT20166106</h3>
+          <ul>
+            <li class="resource">
+              <a class="pdf-link" href="IT20166106_proposal.pdf" download
+                >Project Proposal</a
+              >
+            </li>
+            <li class="resource">
+              <a
+                class="pdf-link"
+                href="IT20166106_H.A.N.S.Perera_Status Document 1.pdf"
+                download
+                >Status Document 1</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="g_pp1.pdf" download
+                >Progress Presentation 1</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="g_pp2.pdf" download
+                >Progress Presentation 2</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="IT20166106_fr.pdf" download
+                >Final Report</a
+              >
+            </li>
+            <li class="resource">
+              <a
+                class="pdf-link"
+                href="IT20166106_H.A.N.S.Perera_Status Document 2.pdf"
+                download
+                >Status Document 2</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="IT20166106_Logbook.pdf" download
+                >Log Book</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>IT20172978</h3>
+          <ul>
+            <li class="resource">
+              <a class="pdf-link" href="IT20172978_proposal.pdf" download
+                >Project Proposal</a
+              >
+            </li>
+            <li class="resource">
+              <a
+                class="pdf-link"
+                href="IT20172978_K.G.P.C.Kariyawasam_Status_Document_01 .pdf"
+                download
+                >Status Document 1</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="g_pp1.pdf" download
+                >Progress Presentation 1</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="g_pp2.pdf" download
+                >Progress Presentation 2</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="IT20172978_fr.pdf" download
+                >Final Report</a
+              >
+            </li>
+            <li class="resource">
+              <a
+                class="pdf-link"
+                href="IT20172978_K.G.P.C.Kariyawasam_Status_Document_02 .pdf"
+                download
+                >Status Document 2</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="IT20172978_Logbook.pdf" download
+                >Log Book</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>IT20227890</h3>
+          <ul>
+            <li class="resource">
+              <a class="pdf-link" href="IT20227890_proposal.pdf" download
+                >Project Proposal</a
+              >
+            </li>
+            <li class="resource">
+              <a
+                class="pdf-link"
+                href="IT20227890_M.W.A.N.C.Muthukumarana_Status Document 1.pdf"
+                download
+                >Status Document 1</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="g_pp1.pdf" download
+                >Progress Presentation 1</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="g_pp2.pdf" download
+                >Progress Presentation 2</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="IT20227890_fr.pdf" download
+                >Final Report</a
+              >
+            </li>
+            <li class="resource">
+              <a
+                class="pdf-link"
+                href="IT20227890_M.W.A.N.C.Muthukumarana_Status Document 2.pdf"
+                download
+                >Status Document 2</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="IT20227890_Logbook.pdf" download
+                >Log Book</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>IT20165666</h3>
+          <ul>
+            <li class="resource">
+              <a class="pdf-link" href="IT20165666_proposal.pdf" download
+                >Project Proposal</a
+              >
+            </li>
+            <li class="resource">
+              <a
+                class="pdf-link"
+                href="IT20165666_Lakshith_G.P.R_Status_Document_01.pdf"
+                download
+                >Status Document 1</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="g_pp1.pdf" download
+                >Progress Presentation 1</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="g_pp2.pdf" download
+                >Progress Presentation 2</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="IT20165666_fr.pdf" download
+                >Final Report</a
+              >
+            </li>
+            <li class="resource">
+              <a
+                class="pdf-link"
+                href="IT20165666_Lakshith_G.P.R_Status_Document_02.pdf"
+                download
+                >Status Document 2</a
+              >
+            </li>
+            <li class="resource">
+              <a class="pdf-link" href="IT20165666_Logbook.pdf" download
+                >Log Book</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>Feel free to reach out for collaboration or inquiries:</p>
+      <p>Email:</p>
+      <ul>
+        <li>
+          <a href="mailto:it20172978@my.sliit.lk"
+            >IT20172978 - Kariyawasam K. G. P. C.</a
+          >
+        </li>
+        <li>
+          <a href="mailto:it20227890@my.sliit.lk"
+            >IT20227890 - Muthukumarana M. W. A. N. C.</a
+          >
+        </li>
+        <li>
+          <a href="mailto:it20165666@my.sliit.lk"
+            >IT20165666 - Lakshith G. P. R.</a
+          >
+        </li>
+        <li>
+          <a href="mailto:it20166106@my.sliit.lk"
+            >IT20166106 - Perera H. A. N. S</a
+          >
+        </li>
+      </ul>
+      <p>We look forward to hearing from you!</p>
+    </section>
+
+    <footer>&copy; 2023 EYE CARE Research Project. All rights reserved.</footer>
+
+    <script>
+      document.querySelectorAll("nav a").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
